@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+	CSS : Csacade Style Sheet
+	1. inline : 태그에 직접 스타일 적용
+	2. intername : <style>태그를 이용하여 스타일시트 모아 놓은 스타일
+	3. external : 외부 스타일 시트
+ -->
+ 	<style>
+ 		/* 주석
+ 			
+ 			선택자{
+ 				속성:속성값;
+ 				속성:속성값;
+ 			}
+ 		*/
+ 		/*태그선택자 256*256*256 */
+ 		span,b,strong{
+ 			/*color:blue;*/
+ 			color:#0000ff; /*	#00f */ /*blue*/
+ 			font-weight : 700; /* 100, 200, 300, 400, 500, 600, 700 */
+ 			font-size : 30px; /* 기본크기 : 16px */
+ 		}
+ 		/*아이디 선택자*/
+ 		#txt{
+ 			background:#ddd; /*	#ddddddd */ /*yellow*/
+ 		}
+ 		/*클래스 선택자*/
+ 		.a{
+ 			background:#8a3;color:#fff;font-size:50px /*	#88aa33 */ /*orange*/
+ 		}
+ 	</style>
+</head>
+<body>
+스텔란티스코리아가 <span class="a">푸조의 최신</span> 엠블럼을 장착한 첫 신차 <i class="a">'뉴 푸조 308(이하 뉴 308)'</i>을 6일 국내 공식 출시한다. 
+뉴 <span id="txt">308은 푸조</span>의 새 시대를 열 '스타일리쉬 해치백'으로, 
+자유분방하고 자신감 넘치며 <span class="a">본인만의 스타일</span>대로 <strong>삶의 가치</strong>를 추구하는 <b>MZ세대</b>를 겨냥한다.
+
+</body>
+</html>

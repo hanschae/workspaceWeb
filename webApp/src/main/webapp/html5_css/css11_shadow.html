@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#d1{
+		width:300px; height:80px; border:1px solid gray; font-size:3em;
+		line-height:80px; margin:20px; text-align:center;
+	}
+	
+	/* 글자의 그림자 설정 */
+	#txt{
+		/*			왼,오른쪽	   위,아래	투명		색상	*/
+		text-shadow:-5px		5px		5px		red;
+	}
+	#box{
+		box-shadow:10px	10px 10px #ccc;
+	}
+	/* 그라데이션 
+		http://colorzilla.com/gradient-editor
+	*/
+	div:first-child{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+21,00daf2+50,00daf2+68,00daf2+68,f8b500+86,fbdf93+100 */
+background: #fceabb; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #fceabb 0%, #fccd4d 21%, #00daf2 50%, #00daf2 68%, #00daf2 68%, #f8b500 86%, #fbdf93 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #fceabb 0%,#fccd4d 21%,#00daf2 50%,#00daf2 68%,#00daf2 68%,#f8b500 86%,#fbdf93 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #fceabb 0%,#fccd4d 21%,#00daf2 50%,#00daf2 68%,#00daf2 68%,#f8b500 86%,#fbdf93 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		
+	}
+</style>
+</head>
+<body>
+<div>
+뉴 M850i xDrive 쿠페 및 그란 쿠페에는 화려한 감각을 자랑하는 새로운 BMW 키드니 그릴이 장착됩니다.
+새 라디에이터 그릴은 프레임 안쪽에 U자형 바가 배치되어 있고, BMW 아이코닉 글로우가 적용돼 그릴 내부
+상단에서 하단으로 마치 폭포수가 쏟아지는 듯한 조명 효과를 냅니다. 또한, BMW 레이저 라이트가 탑재된
+얇은 헤드램프와 새로운 디자인의 에어 인테이크 인레이를 적용한 전면 범퍼가 조화를 이뤄 한층 더 강렬한
+인상을 자아냅니다.
+</div>
+<div id="d1">
+	<div id="txt">글자 그림자</div>
+	<div id="box">박스 그림자</div>
+</div>
+</body>
+</html>

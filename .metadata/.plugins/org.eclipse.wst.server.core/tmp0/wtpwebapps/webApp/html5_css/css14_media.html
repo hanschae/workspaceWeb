@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 															0~10 -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+	ul, li{margin:0; padding:0; list-style-type:none;}
+	li{margin:5px 0; background:lightblue; float:left; width:100%;}
+	/* media 쿼리를 이용하여 반응형 스타일 지정*/
+	/* 디스플레이 종류 : all, screen, print, tv, projection, ... */
+	@media all and (min-width:320px) and (max-width:600px){
+		li{background-color:yellow;}
+		img{display:block;}
+	}
+	@media all and (min-width:601px) and (max-width:800px){
+		li{background-color:pink;}
+		img{display:none;}
+	}
+	@media all and (min-width:801px){
+		li{background-color:orange; color:#fff;}
+		img{display:block;}
+	}
+</style>
+</head>
+<body>
+<ul>
+	<li>특히 우라칸 테크니카는 향상된 동력제어 시스템 (Lamborghini Dinamica Veicolo Integrata, LDVI), 테크니카 전용 서스펜션 설정을 포함한 드라이빙 모드, </li>
+	<li>더욱 직접적으로 연동되는 후륜 조향 시스템, 혁신적인 브레이크 냉각 시스템을 탑재해 운전자가 매 순간 완벽한 우라칸을 경험할 수 있게 디자인됐다.</li>
+	<li>이날 우라칸 테크니카 제품 소개를 담당한 오토모빌리 람보르기니 아시아 태평양 지역 총괄 프란체스코 스카르다오니(Francesco Scardaoni)</li>
+	<li>는 “우라칸 테크니카는 더욱 강력해진 성능으로 공도와 트랙을 자유자재로 넘나드는 다재다능한 매력을 지닌 모델이며, 새롭고 신선한 디자인과 람보르기니 엔지니어들의 </li>
+	<li>최신 기술 혁신을 탑재해 우라칸 라인업의 새로운 장을 연 모델”이라며 “우라칸 테크니카가 한국 슈퍼 스포츠카 시장에 새로운 돌풍을 불러 일으킬 것이라고 기대한다”라고 말했다.</li>
+	<li><img src="../img/dino.jpg"/></li>
+</ul>
+</body>
+</html>
+ 

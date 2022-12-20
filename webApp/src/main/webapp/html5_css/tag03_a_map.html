@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>1개의 이미지를 여러 곳으로 링크 걸기</h1>
+<img src="../img/jeju_map.jpg" usemap="#jejuMap"/>
+<pre>
+	map태그, area태그
+	shape : 링크 모양(rect : 사각, polly : 다각, circle : 원)
+	coords : 좌표
+	href : 이동할 페이지
+</pre>
+<map name="jejuMap">
+			<!-- 사각형		  x1,y1,x2,y2 	 		 index.do = jsp로 만들었다 -->
+	<area shape="rect" coords="190,130,270,150" 
+	href="https://www.airport.co.kr/jeju/index.do" target="_blank" title="제주국제공항"/> 
+			<!-- 원				x,y,r		 -->
+	<area shape="circle" coords="335,270,20" 
+	href="https://visithalla.jeju.go.kr/main/main.do" target="_blank" title="한라산국립공원"/> 
+			<!-- 다각형			x1,y1,x2,y2,x3,y3,x4,y4 시작점을 정하고 시계방향으로, 각이 더 많을경우 계속 추가 -->
+	<area shape="polly" coords="70,210,160,240,100,270,10,265" href="..//index.html"/> 
+</map>
+</body>
+</html>

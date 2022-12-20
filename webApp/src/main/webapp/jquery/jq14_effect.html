@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	img {width:500px; height:500px;}
+</style>
+<script>
+	$(function(){
+		$("#hide").click(function(){
+			// 폭, 높이, 점점흐리게 숨기기
+			//				사라지는 시간 : 'slow', 'fast', 'normal', 밀리초
+			$("img").first().hide(4000, function(){
+				// alert('종료됨'); // 콜백함수, 동작이 완료된 후 실행
+			});
+		});
+		// show : 보여주기
+		$("#show").on('click', function(){
+			$("img:first").show(4000);				
+		});
+		// toggle : 보여주기, 숨기기를 반복실행
+		$(document).on('click','#toggle',function(){
+			$('img').first().toggle(4000);
+		});
+		
+		// 점점 흐리게
+		$("#fadeOut").click(function(){
+			$("img").first().fadeOut(4000);
+		});
+		
+		// 점점 진하게
+		$("#fadeIn").click(function(){
+			$("img").first().fadeIn(4000);
+		});
+		
+		// 흐리게 진하게 반복실행
+		$("#fadeToggle").click(function(){
+			$("img:first").fadeToggle(3000);
+		});
+		
+		$("#slideUp").click(function(){
+			$("img").first().slideUp(3000);
+		});
+		$("#slideDown").click(function(){
+			$("img:first").slideDown(3000);
+		});
+		$("#slideToggle").click(function(){
+			$("img").first().slideToggle(3000);
+		});
+	});
+</script>
+</head>
+<body>
+<button id="hide">숨기기(hide)</button>
+<button id="show">보여주기(show)</button>
+<button id="toggle">숨기기,보여주기(toggle)</button>
+<button id="fadeOut">점점 흐리게(fadeOut)</button>
+<button id="fadeIn">점점 진하게(fadeIn)</button>
+<button id="fadeToggle">(fadeToggle)</button>
+<button id="slideUp">slideUp</button>
+<button id="slideDown">slideDown</button>
+<button id="slideToggle">slideToggle</button>
+<hr/>
+<img src="../img/04.jpg"/><br/>
+<img src="../img/dino.jpg"/>
+</body>
+</html>

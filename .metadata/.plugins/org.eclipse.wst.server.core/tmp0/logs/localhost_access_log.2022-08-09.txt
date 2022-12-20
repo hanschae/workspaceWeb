@@ -1,0 +1,14 @@
+127.0.0.1 - - [09/Aug/2022:13:26:18 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:13:26:18 +0900] "GET /webApp/html5_css/login/loginForm.html HTTP/1.1" 200 1729
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:13:26:18 +0900] "GET /webApp/html5_css/login/daum.png HTTP/1.1" 200 2743
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:13:26:18 +0900] "GET /webApp/html5_css/login/banner.png HTTP/1.1" 200 14659
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:13:26:19 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+127.0.0.1 - - [09/Aug/2022:14:09:15 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:09:16 +0900] "GET /webServlet/main.do HTTP/1.1" 200 291
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:09:20 +0900] "POST /webServlet/loginOk.do HTTP/1.1" 200 137
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:09:22 +0900] "GET /webServlet/index.do HTTP/1.1" 200 154
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:12:53 +0900] "GET /webServlet/logout.do HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:12:53 +0900] "GET /webServlet/index.do HTTP/1.1" 200 137
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:12:53 +0900] "GET /webServlet/main.do HTTP/1.1" 200 291
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:12:58 +0900] "POST /webServlet/loginOk.do HTTP/1.1" 200 137
+0:0:0:0:0:0:0:1 - - [09/Aug/2022:14:13:00 +0900] "GET /webServlet/index.do HTTP/1.1" 200 154

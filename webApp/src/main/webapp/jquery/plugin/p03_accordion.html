@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 
+	https://github.com/alaingoga 에서 다운로드
+	
+	1. accordionImageMenu.css
+	2. jquery
+	3. jqueryui
+	4. jquery.accordionImageMenu.js
+ -->
+<link rel="stylesheet" href="/webApp/js_css/accordionImageMenu.css" type="text/css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/webApp/js_css/jquery-ui.min.js"></script>
+<script src="/webApp/js_css/jquery.accordionImageMenu.js"></script>
+<script>
+	$(function(){
+		$("#acc").AccordionImageMenu({
+			position : 'horizontal' // 'horizontal', 'vertical'
+			, openItem : 3 // 기본선택목록, index위치의 내용이 크게나옴
+			, openDim : 500 // 확장된 목록의 크기
+			// , closeDim : 100 // 닫힌목록의 크기
+			
+			// width, height	horizontal > 높이조절 가능	vertical > 폭 조절가능
+			, width : 1400
+			, height : 500
+			, duration : 2000 // 전환속도
+			, effect : 'easeOutBounce'
+			, border : 20
+			, color : 'yellow' // 배경색
+			
+			
+		});
+	});
+</script>
+</head>
+<body>
+<div>
+	<ul id="acc">
+		<li><a href="#"><img src="/webApp/img/01.jpg"/></a></li>
+		<li><a href="#"><img src="/webApp/img/02.jpg"/></a></li>
+		<li><a href="#"><img src="/webApp/img/03.jpg"/></a></li>
+		<li><a href="#"><img src="/webApp/img/04.jpg"/></a></li>
+		<li><a href="#"><img src="/webApp/img/dino.jpg"/></a></li>
+		<li><a href="#"><img src="/webApp/img/glass1.gif"/></a></li>
+		<li><a href="#"><img src="/webApp/img/glass2.gif"/></a></li>
+	</ul>
+</div>
+</body>
+</html>
